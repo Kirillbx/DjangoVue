@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    {% load render_bundle from webpack_loader %}
+    <meta charset="UTF-8">
+    <title>Категории товаров</title>
+  </head>
+  <body>
+    <div id="ProdCatApp"></div>
+    <script>
+      var prodcatdata = "{{ prodcatdata|escapejs }}";
+    </script>
+    {% render_bundle 'common' %}
+  </body>
+</html>
